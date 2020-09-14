@@ -33,19 +33,19 @@ const questionFive = prompt("Who is the lead singer of Coldplay?");
 if (questionOne.toUpperCase() === answerOne) {
   currentScore = currentScore + 1;
   console.log(`1. Correct`);
-  document.querySelector("div").innerHTML = `1. Congratulations you got this question correct!`
+  document.querySelector("div").getElementsByClassName("answerOne").innerHTML = `1. Congratulations you got this question correct!`
 } else {
   console.log(`1. Incorrect`);
-  document.querySelector("div").innerHTML = `1. Unfortunately you didn't get this right. The correct answer was ${answerOne}.`
+  document.querySelector("div").getElementsByClassName("answerOne").innerHTML = `1. Unfortunately you didn't get this right. The correct answer was ${answerOne}.`
 }
 
 if (questionTwo.toUpperCase() === answerTwo) {
   currentScore = currentScore + 1;
   console.log(`2. Correct`);
-  document.querySelector(".answerTwo").innerHTML = `1. Congratulations you got this question correct!`
+  document.querySelector("div").getElementsByClassName("answerTwo").innerHTML = `1. Congratulations you got this question correct!`
 } else {
   console.log(`2. Incorrect`);
-  document.querySelector(".answerTwo").innerHTML = `1. Unfortunately you didn't get this right. The correct answer was ${answerTwo}.`
+  document.querySelector("div").getElementsByClassName("answerTwo").innerHTML = `1. Unfortunately you didn't get this right. The correct answer was ${answerTwo}.`
 }
 
 if (questionThree.toUpperCase() === answerThree) {
