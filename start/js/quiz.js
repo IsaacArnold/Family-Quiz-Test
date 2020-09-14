@@ -42,10 +42,10 @@ if (questionOne.toUpperCase() === answerOne) {
 if (questionTwo.toUpperCase() === answerTwo) {
   currentScore = currentScore + 1;
   console.log(`2. Correct`);
-  document.querySelector("answerTwo").innerHTML = `1. Congratulations you got this question correct!`
+  document.querySelector(".answerTwo").innerHTML = `1. Congratulations you got this question correct!`
 } else {
   console.log(`2. Incorrect`);
-  document.querySelector("answerTwo").innerHTML = `1. Unfortunately you didn't get this right. The correct answer was ${answerTwo}.`
+  document.querySelector(".answerTwo").innerHTML = `1. Unfortunately you didn't get this right. The correct answer was ${answerTwo}.`
 }
 
 if (questionThree.toUpperCase() === answerThree) {
