@@ -11,22 +11,12 @@ const answerThree = "1945";
 const answerFour = "MADRID";
 const answerFive = "CHRIS MARTIN";
 
-
-
 // 2. Store the rank of a player
 const rankOne = "Gold";
 const rankTwo = "Silver";
 const rankThree = "Bronze";
 const noRank = "No Rank";
 
-// 3. Select the <main> HTML element
-
-
-/*
-  4. Ask at least 5 questions
-   - Store each answer in a variable
-   - Keep track of the number of correct answers
-*/
 // Asks five questions and logs the answers
 const questionOne = prompt("What is the name of the river that runs through Egypt?");
   console.log(questionOne);
@@ -43,8 +33,10 @@ const questionFive = prompt("Who is the lead singer of Coldplay?");
 if (questionOne.toUpperCase() === answerOne) {
   currentScore = currentScore + 1;
   console.log(`1. Correct`);
+  document.querySelector("div").innerHTML = `1. Congratulations you got this question correct!`
 } else {
   console.log(`1. Incorrect`);
+  document.querySelector("div").innerHTML = `1. Unfortunately you didn't get this right. The correct answer was ${answerOne}.`
 }
 
 if (questionTwo.toUpperCase() === answerTwo) {
