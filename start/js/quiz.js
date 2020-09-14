@@ -33,36 +33,47 @@ const questionFive = prompt("Who is the lead singer of Coldplay?");
 if (questionOne.toUpperCase() === answerOne) {
   currentScore = currentScore + 1;
   console.log(`1. Correct`);
+  document.querySelector(".answerOne").innerHTML = `1. Congratulations, you got this question right!`
 } else {
   console.log(`1. Incorrect`);
+  document.querySelector(".answerOne").innerHTML = `1. Sorry, you answered this question incorrectly. The correct answer was ${answerOne}`
 }
 
 if (questionTwo.toUpperCase() === answerTwo) {
   currentScore = currentScore + 1;
   console.log(`2. Correct`);
+  document.querySelector(".answerTwo").innerHTML = `2. Congratulations, you got this question right!`
 } else {
   console.log(`2. Incorrect`);
+  document.querySelector(".answerTwo").innerHTML = `2. Sorry, you answered this question incorrectly. The correct answer was ${answerTwo}`
 }
 
 if (questionThree.toUpperCase() === answerThree) {
   currentScore = currentScore + 1;
   console.log(`3. Correct`);
+  document.querySelector(".answerThree").innerHTML = `3. Congratulations, you got this question right!`
 } else {
   console.log(`3. Incorrect`);
+  document.querySelector(".answerThree").innerHTML = `3. Sorry, you answered this question incorrectly. The correct answer was ${answerThree}`
 }
 
 if (questionFour.toUpperCase() === answerFour) {
   currentScore = currentScore + 1;
   console.log(`4. Correct`);
+  document.querySelector(".answerFour").innerHTML = `4. Congratulations, you got this question right!`
 } else {
   console.log(`4. Incorrect`);
+  document.querySelector(".answerFour").innerHTML = `4. Sorry, you answered this question incorrectly. The correct answer was ${answerFour}`
 }
 
 if (questionFive.toUpperCase() === answerFive) {
   currentScore = currentScore + 1;
   console.log(`5. Correct`);
+  document.querySelector(".answerFive").innerHTML = `5. Congratulations, you got this question right!`
 } else {
   console.log(`5. Incorrect`);
+  document.querySelector(".answerFive").innerHTML = `5. Sorry, you answered this question incorrectly. The correct answer was ${answerFour}`
+
 }
 
 /*
