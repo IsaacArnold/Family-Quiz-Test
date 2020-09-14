@@ -5,11 +5,11 @@
 let currentScore = 0;
 let currentRank = 0;
 
-const egypt = "THE NILE"; 
-const pirate = "JOHNNY DEPP";
-const war = "1945";
-const spain = "MADRID";
-const coldplay = "CHRIS MARTIN";
+const answerOne = "THE NILE"; 
+const answerTwo = "JOHNNY DEPP";
+const answerThree = "1945";
+const answerFour = "MADRID";
+const answerFive = "CHRIS MARTIN";
 
 
 
@@ -40,35 +40,35 @@ const questionFive = prompt("Who is the lead singer of Coldplay?");
   console.log(questionFive);
 
 // Keep track of players rank
-if (questionOne.toUpperCase() === egypt) {
+if (questionOne.toUpperCase() === answerOne) {
   currentScore = currentScore + 1;
   console.log(`1. Correct`);
 } else {
   console.log(`1. Incorrect`);
 }
 
-if (questionTwo.toUpperCase() === pirate) {
+if (questionTwo.toUpperCase() === answerTwo) {
   currentScore = currentScore + 1;
   console.log(`2. Correct`);
 } else {
   console.log(`2. Incorrect`);
 }
 
-if (questionThree.toUpperCase() === war) {
+if (questionThree.toUpperCase() === answerThree) {
   currentScore = currentScore + 1;
   console.log(`3. Correct`);
 } else {
   console.log(`3. Incorrect`);
 }
 
-if (questionFour.toUpperCase() === spain) {
+if (questionFour.toUpperCase() === answerFour) {
   currentScore = currentScore + 1;
   console.log(`4. Correct`);
 } else {
   console.log(`4. Incorrect`);
 }
 
-if (questionFive.toUpperCase() === coldplay) {
+if (questionFive.toUpperCase() === answerFive) {
   currentScore = currentScore + 1;
   console.log(`5. Correct`);
 } else {
